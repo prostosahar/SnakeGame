@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ruslan+Display&family=Tektur:wght@400..900&family=Yeseva+One&display=swap');
+
+@font-face {
+    font-family: 'Shrek';
+    src: url('../fonts/shrek.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h2{
+    margin: 5px auto;
+}
+
+.menu{
+    background-image: url(../images/image-background-menu.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-name{
+    font-family: 'Shrek';
+    color: green;
+    -webkit-text-stroke: 0.3px black;
+    margin: 0;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.button-play{
+    font-family: 'Tektur';
+    margin-top: 200px;
+    font-size: 70px;
+    font-weight: 700;
+    color: green;
+    background-color: transparent;
+    border: none;
+    -webkit-text-stroke: 2px black;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.button-play:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.interface-game{
+    background-image: url(../images/image-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-points{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    margin: 30px 0;
+}
+
+.counter-points-now, .counter-points-record{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field-points{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-points{
+    font-family: 'Tektur';
+    -webkit-text-stroke: 1px black;
+    color: white;
+    margin: 5px 0;
+}
+
+#points-now, #points-record{
+    font-family: 'Tektur';
+    font-size: 40px;
+    background-color: white;
+    padding: 5px 10px;
+    border: 2px solid black;
+}
+
+.image-ground{
+    height: 700px;
+    width: 700px;
+}
+
+.grid-field{
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    
+    border: 3px solid black;
+}
+
+.grid-field > div {
+    width: 40px;
+    height: 40px;
+    box-shadow: -1px -1px 0 black;
+}
