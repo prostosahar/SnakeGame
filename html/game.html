@@ -6,6 +6,12 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+    <div id="game-over" style="display: none">
+        <h1>Игра окончена. Змейка врезалась в хвост.</h1>
+        <h1>Ваш счёт: <span id="recordGameOver">0</span></h1>
+        <button id="replay">Заново</button>
+    </div>
+    <img src="../images/image-ground.jpg" class="bg-image" alt="">
     <div class="interface-game">
         <div class="counter-points">
             <div class="counter-points-now">
@@ -22,12 +28,10 @@
             </div>
         </div>
         <div class="field-game">
-            <!--<img src="../images/image-ground.png" class="image-ground">-->
-            <div class="grid-field">
-                
-            </div>
+            <div class="grid-field"></div>
         </div>
     </div>
+    
     </body>
 </html>
 <script src="../js/script.js"></script>
